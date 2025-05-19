@@ -1,0 +1,20 @@
+---
+title: Predicting Vehicle Collisions from Dashcam Video Using Neural Network Models
+---
+
+# Introduction
+
+
+
+# Literature Review
+
+Advancements in autonomous driving and intelligent safety systems have led to increased research in collision detection using computer vision and deep learning. Dashcam-based crash prediction is particularly relevant for real-time driver assistance, auto insurance evaluation, and autonomous navigation. This section reviews recent studies that integrate object detection and sequence modeling for collision analysis.
+
+Nguyen et al. (2023) proposed a pipeline combining YOLOv5 and Mask R-CNN for object and lane detection in dashcam footage, tailored for auto insurance scenarios. Their hybrid approach improved detection accuracy in complex scenes through pre-training and fine-tuning on diverse driving conditions. Fernandes et al. (2018) developed a CNN-RNN system for road anomaly detection, emphasizing how sequential frame dependencies can enhance event recognition, laying groundwork for models like GRUs and LSTMs.
+Saini et al. (2022) focused on fast, lightweight ML models for collision detection on embedded devices, achieving over 90% accuracy using sensor data and basic vision techniques. Though they avoided models like YOLO, their work underscores real-world constraints such as speed and resource limits.
+
+Wee et al. (2022) presented a deep learning pipeline for forward collision warning, using YOLACT to balance detection accuracy and inference speed. Their system robustly handled challenging conditions like nighttime and rain, and their benchmark comparisons highlighted YOLACT as a practical compromise between performance and efficiency.
+Across these works, a common theme emerges: combining robust object detection (e.g., YOLO, Mask R-CNN) with temporal or contextual modeling enhances collision prediction. Key challenges include occlusion handling, real-time processing, and robustness under diverse conditions. These insights directly shaped our approach, where YOLOv8 preprocessing feeds into sequential models for crash prediction.
+
+
+The Github repository hosting all code for this project can be found [here](https://github.com/dcorc7/Travel-Itinerary-Generator)
